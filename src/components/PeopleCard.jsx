@@ -17,6 +17,9 @@ const PeopleCard = (props) => {
                                 <li className="list-group-item">Hair color: {person.hair_color}</li>                                  
                             </ul>
                         </div>
+                        <footer className="blockquote-footer">
+                            <a target="null" href={`https://ghibliapi.herokuapp.com/people/${person.id}`}>link to raw JSON code</a>
+                        </footer>
                     </div>
                 </div>
             ))}
